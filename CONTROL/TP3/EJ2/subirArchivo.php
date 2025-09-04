@@ -11,7 +11,7 @@
 
     <?php
     
-    $dirDestino = "archivos/";
+    $dirDestino = "../../../MODELO/TP3/EJ2/archivos/";
 
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -43,4 +43,5 @@
 }
     ?>
     </body>
+
 </html>
