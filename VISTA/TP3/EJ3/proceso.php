@@ -13,7 +13,7 @@
     
 
 <?php 
-    include_once ("validar.php");
+    include_once ('../../../CONTROL/TP3/EJ3/validar.php');
 
     $datos = new validar();
     $array = $datos->validador($_POST);
