@@ -11,7 +11,7 @@
 
     <?php
     
-    $dirDestino = "../../../MODELO/TP3/EJ2/archivos/";
+    $dirDestino = "../../../MODELO/TP3/EJ2";
 
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {

@@ -13,7 +13,7 @@ Class validar {
         $genero = $tipo['genero'];
         $duracion = $tipo['duracion'];
         $restricciones = $tipo['radio'];
-        $dir = 'archivos/';
+        $dir = '../../../MODELO/TP3/EJ3';
         $esValido = true;
 
         if ($restricciones == 1) {

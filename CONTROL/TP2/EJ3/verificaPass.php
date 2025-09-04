@@ -9,7 +9,7 @@
 
     $usuario1 = [
         "usuario" => "Tomas",
-        "clave" => "12345678"
+        "clave" => "Tomas2025"
     ];
 
     $datosUsuarios = [$usuario1];

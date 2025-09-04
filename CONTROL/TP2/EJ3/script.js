@@ -26,6 +26,7 @@ document.getElementById('form1').addEventListener('submit', function(e) {
   const user = document.getElementById('usuario').value; //obtencion de user
   const pass = document.getElementById('password').value; //obtencion de password
   const passCont = document.getElementById('pass-cont'); //obtencion de contenedor de password
+  const passError = document.getElementById('passwordError');
   let valido=true; 
   const form = this;
 
@@ -49,10 +50,12 @@ document.getElementById('form1').addEventListener('submit', function(e) {
     valido = false;
   } else if (pass === user) {
     document.getElementById('password').classList.add('is-invalid');
-    passCont.textContent = "La contraseña no puede ser igual que el nombre de usuario.";
+    passError.textContent = "La contraseña no puede ser igual que el nombre de usuario.";
+    document.getElementById('password').style.border= "solid 1px red";
     valido = false;
   } else if (!/[A-Za-z]/.test(pass) || !/[0-9]/.test(pass)) {
-    passCont.textContent = "La contraseña debe contener numeros y letras.";
+    passError.textContent = "La contraseña debe contener numeros y letras.";
+    document.getElementById('password').style.border= "solid 1px red";
     valido =false;
   } else {
     document.getElementById('password').classList.remove('is-invalid');

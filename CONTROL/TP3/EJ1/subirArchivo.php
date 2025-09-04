@@ -11,7 +11,7 @@
 
     <?php
     
-    $dirDestino = "../../../MODELO/TP3/EJ1/archivos/";
+    $dirDestino = "../../../MODELO/TP3/EJ1";
     $tam_max = 2 * 1024 * 1024;
 
 

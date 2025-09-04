@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <script src="../../../CONTROL/TP2/EJ6/validacion.js"></script>
+    <script src="../../../../CONTROL/TP2/EJ2/EJ6/validacion.js"></script>
 </head>
 <body>
     <h2>Ingrese sus datos</h2>
-    <form method="get" action="./saludo.php">
+    <form method="get" action="saludo.php">
         <label>Nombre: <input type="" name="Nombre" required></label><br>
         <label>Apellido: <input type="text" name="Apellido" required></label><br>
         <label>Edad: <input type="number" name="Edad" min="12" max="120" required></label><br>

@@ -1,6 +1,6 @@
 <?php
 
-include_once '../../../MODELO/TP2/EJ6/Usuario.php';
+include_once '../../../../MODELO/TP2/EJ2/EJ6/Usuario.php';
 
 $nombre = $_GET['Nombre'] ?? '';
 $apellido = $_GET['Apellido'] ?? '';

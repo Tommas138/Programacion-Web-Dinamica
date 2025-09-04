@@ -22,6 +22,6 @@ if ($numeroFormulario > 0) {
 }
 
 ?>
-<a href="ejercicio1.php">Volver al formulario </a>
+<a href="../../../VISTA/TP1/EJ1/ejercicio1.html">Volver al formulario </a>
 </body>
 </html>

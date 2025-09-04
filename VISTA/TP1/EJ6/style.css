@@ -1,0 +1,12 @@
+body {
+    color: rgb(17, 88, 53);
+    padding: 20px;
+}
+
+input[type="text"],
+input[type="submit"] {
+    padding:2px;
+    align-self: center;
+    margin-left: 10px;
+}
+
