@@ -1,0 +1,21 @@
+#btn-borrar {
+border-color: gray;
+}
+
+#botones {
+    margin-left: 1080px;
+}
+
+#peli {
+    width: 1000px;
+
+}
+
+#datos {
+    color:green;
+}
+
+#salir {
+    margin-left: 930px;
+    color: grey;
+}
