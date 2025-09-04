@@ -11,7 +11,7 @@
 
     <?php
     
-    $dirDestino = "archivos/";
+    $dirDestino = "../../../MODELO/TP3/EJ1/archivos/";
     $tam_max = 2 * 1024 * 1024;
 
 
@@ -44,4 +44,5 @@
       }
     ?>
     </body>
+
 </html>
