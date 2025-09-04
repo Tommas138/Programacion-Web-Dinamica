@@ -35,6 +35,6 @@ switch ($tipo) {
 <?php
 echo $salida;
 ?>
-<a href="../../../VISTA/TP1/EJ1/ejercicio1.html">Volver al formulario </a>
+<a href="../ejercicio1.html">Volver al formulario </a>
 </body>
 </html>

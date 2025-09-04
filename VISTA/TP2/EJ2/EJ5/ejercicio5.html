@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>FORMULARIO</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+        <form id="form5" name="form5" method="POST" action="ACCION/destino.php" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="nombre_form" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    Se ve bien!
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Apellido </label>
+                <input type="text" name="apellido_form" class="form-control" id="validationCustom02" required>
+                <div class="valid-feedback">
+                    Se ve bien!
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <label for="validationCustom03" class="form-label">Edad</label>
+                <input type="number" name="edad_form" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Ingrese su edad
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationCustom04" class="form-label">Direccion </label>
+                <input type="text" name="direccion_form" class="form-control" id="validationCustom04" required>
+                <div class="invalid-feedback">
+                    Ingrese su direccion
+                </div>
+            </div>
+
+            <div class="form-check">
+                <h3>Nivel de estudios</h3>
+                <input class="form-check-input" type="radio" name="estudios" id="flexRadioDefault1" value="1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                No tiene estudios
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="estudios" id="flexRadioDefault2" value="2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                Estudios primarios
+                </label>
+            </div>
+             <div class="form-check">
+                <input class="form-check-input" type="radio" name="estudios" id="flexRadioDefault3" value="3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                Estudios secundarios
+                </label>
+            </div>
+
+            <div class="form-check">
+                <h3>Sexo</h3>
+                <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault4" value="M">
+                <label class="form-check-label" for="flexRadioDefault4">
+                    Masculino
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault5" value="F">
+                <label class="form-check-label" for="flexRadioDefault5">
+                    Femenino
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault6" value="O">
+                <label class="form-check-label" for="flexRadioDefault6">
+                    Otro
+                </label>
+            </div>
+          
+                        <input name="submit" type="submit" value="Aceptar">
+
+        </form>
+
+            <script src="JS/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

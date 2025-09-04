@@ -6,7 +6,7 @@
 </head>
 <body>
     <h2>Calculadora Simple</h2>
-    <form action="./resultado.php" method="post">
+    <form action="accion/resultado.php" method="post">
         <label for="num1">Primer número:</label>
         <input type="text" id="num1" name="num1" required><br><br>
 

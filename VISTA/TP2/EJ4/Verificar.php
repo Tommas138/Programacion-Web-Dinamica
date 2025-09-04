@@ -12,7 +12,7 @@
 
 
 <?php 
-    include_once ("../../../MODELO/TP2/EJ4/verificar2.php");
+    include_once ("ACCION/verificar2.php");
 
     $datos = new validar();
     $array = $datos->validador($_POST);

@@ -1,0 +1,56 @@
+<?php
+
+
+Class Persona {
+
+    public function Mensaje($nombre, $apellido, $edad, $direccion, $nivelEstudios, $tipoSexo, $cantDeportes, $deporte) {
+
+        if ($edad>= 18) {
+        $cadena = (
+            "
+            $nombre $apellido, que vive en $direccion de $edad años es mayor de edad
+            "
+        );
+        } else {
+          $cadena = (
+            "
+            $nombre $apellido, que vive en $direccion de $edad años es menor de edad
+            "
+        );  
+        }
+
+        switch ($nivelEstudios) {
+            case 1:
+                $cadena .= " no posee estudios\n";
+            break;
+            case 2:
+                $cadena .= " posee estudios primarios\n";
+            break;
+            case 3:
+                $cadena .= " posee estudios secundarios\n";
+            break;
+        } 
+
+        switch ($tipoSexo) {
+            case 'M':
+                $cadena .= " y su sexo es masculino";
+            break;
+            case 'F':
+                $cadena .= " y su sexo es femenino";
+            break;
+            case 'O':
+                $cadena .= " y su sexo es otro";
+            break;
+        }
+
+        $cadena .= " practica $cantDeportes deportes, tales como: ";
+        foreach ($deporte as $cadaDeporte) {
+            $cadena .= " $cadaDeporte";
+        }
+       
+        return $cadena;
+    }
+}
+
+
+?>

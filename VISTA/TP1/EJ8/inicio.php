@@ -6,7 +6,7 @@
 </head>
 <body>
     <h2>Calcula el valor de tu entrada</h2>
-    <form method="post" action="./precio.php">
+    <form method="post" action="accion/precio.php">
         <label for="edad">Edad:</label>
         <input type="number" name="edad" id="edad" min="0" max="120" required><br><br>
         <label for="estudiante">

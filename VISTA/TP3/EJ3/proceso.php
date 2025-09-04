@@ -13,10 +13,10 @@
     
 
 <?php 
-    include_once ('../../../CONTROL/TP3/EJ3/validar.php');
+    include_once ('ACCION/accion.php');
 
-    $datos = new validar();
-    $array = $datos->validador($_POST);
+
+    $array = validador($_POST);
     $titulo = $array[0];
     $actores = $array[1];
     $director = $array[2];
