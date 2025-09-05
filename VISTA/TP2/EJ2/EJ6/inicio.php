@@ -9,7 +9,7 @@
 <body>
     <a href="../../../../menu.html">Volver al menú</a>
     <h2>Ingrese sus datos</h2>
-    <form method="post" action="./saludo.php">
+    <form method="post" action="./ACCION/saludo.php">
         <label>Nombre: <input type="" name="Nombre" required></label><br>
         <label>Apellido: <input type="text" name="Apellido" required></label><br>
         <label>Edad: <input type="number" name="Edad" min="12" max="120" required></label><br>

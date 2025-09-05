@@ -1,17 +1,4 @@
 <?php
-include_once '../../../../MODELO/TP2/EJ2/Usuario.php';
-
-$nombre = $_POST['Nombre'] ?? '';
-$apellido = $_POST['Apellido'] ?? '';
-$edad = $_POST['Edad'] ?? 0;
-$direccion = $_POST['Direccion'] ?? '';
-$nivelEstudio = $_POST['NivelEstudio'] ?? '';
-$sexo = $_POST['Sexo'] ?? '';
-$deportes = $_POST['Deportes'] ?? [];
-$direccionNumero = $_POST['numeroDireccion'] ?? '';
-$stringEstudio = '';
-$usuario = new Usuario($nombre, $apellido, $edad, $direccion . $direccionNumero, $nivelEstudio, $sexo, $deportes);
-
 function salidaPersona($usuario) {
     switch ($usuario->getNivelEstudio()) {
     case "1":
@@ -32,8 +19,5 @@ function salidaPersona($usuario) {
     }
     return $salida;
 }
-
-$usuario = new Usuario($nombre, $apellido, $edad, $direccion, $nivelEstudio, $sexo, $deportes);
-$salida = salidaPersona($usuario);
 
 ?>
