@@ -5,6 +5,7 @@
     <title>Operaciones Matemáticas</title>
 </head>
 <body>
+    <a href="../../../menu.html">Volver al menú</a>
     <h2>Calculadora Simple</h2>
     <form action="accion/resultado.php" method="post">
         <label for="num1">Primer número:</label>

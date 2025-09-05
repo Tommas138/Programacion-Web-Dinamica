@@ -5,15 +5,14 @@
 
 <title> Formulario ej2</title>
 </head>
-
     <body> 
-
+    <a href="../../../menu.html">Volver al menú</a>
     <form id= "form2" name= "form2" method="GET" action="accion/destino.php">
-        Lunes: <input name="horario_lunes" type="text" id="horario_lunes"> <br/> <br>
-        Martes: <input name="horario_martes" type="text" id="horario_martes"> <br/> <br>
-        Miercoles: <input name="horario_miercoles" type="text" id="horario_miercoles"> <br/> <br>
+        Lunes: <input name="horario_lunes" type="number" min="0" id="horario_lunes"> <br/> <br>
+        Martes: <input name="horario_martes" type="number" min="0" id="horario_martes"> <br/> <br>
+        Miercoles: <input name="horario_miercoles" type="number" min="0" id="horario_miercoles"> <br/> <br>
         Jueves: <input name="horario_jueves" type="tex" id="horario_jueves"> <br/> <br>
-        Viernes: <input name="horario_viernes" type="text" id="horario_viernes"> <br/> <br>
+        Viernes: <input name="horario_viernes" type="number" min="0" id="horario_viernes"> <br/> <br>
         <input name="submit" type="submit" value="ACEPTAR">
     </form>
     </body>

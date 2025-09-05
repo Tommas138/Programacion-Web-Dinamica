@@ -5,6 +5,7 @@
     <title>Calculadora de Entradas - Cinem@s</title>
 </head>
 <body>
+    <a href="../../../menu.html">Volver al menú</a>
     <h2>Calcula el valor de tu entrada</h2>
     <form method="post" action="accion/precio.php">
         <label for="edad">Edad:</label>

@@ -7,8 +7,9 @@
     <script src="js/validacion.js"></script>
 </head>
 <body>
+    <a href="../../../../menu.html">Volver al menú</a>
     <h2>Ingrese sus datos</h2>
-    <form method="get" action="accion/saludo.php">
+    <form method="post" action="./saludo.php">
         <label>Nombre: <input type="" name="Nombre" required></label><br>
         <label>Apellido: <input type="text" name="Apellido" required></label><br>
         <label>Edad: <input type="number" name="Edad" min="12" max="120" required></label><br>
@@ -18,7 +19,7 @@
         </div>
         
         <label>Nivel de estudio:</label><br>
-        <input type="radio" name="NivelEstudio" value="1" required> No tiene estudios<br>
+        <input type="radio" name="NivelEstudio" value="1"> No tiene estudios<br>
         <input type="radio" name="NivelEstudio" value="2"> Estudios primarios<br>
         <input type="radio" name="NivelEstudio" value="3"> Estudios secundarios<br>
         

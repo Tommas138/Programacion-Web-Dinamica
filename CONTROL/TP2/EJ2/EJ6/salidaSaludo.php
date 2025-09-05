@@ -1,46 +1,39 @@
 <?php
-include_once '../../EJ5/Usuario.php';
+include_once '../../../../MODELO/TP2/EJ2/Usuario.php';
 
-Class Persona {
+$nombre = $_POST['Nombre'] ?? '';
+$apellido = $_POST['Apellido'] ?? '';
+$edad = $_POST['Edad'] ?? 0;
+$direccion = $_POST['Direccion'] ?? '';
+$nivelEstudio = $_POST['NivelEstudio'] ?? '';
+$sexo = $_POST['Sexo'] ?? '';
+$deportes = $_POST['Deportes'] ?? [];
+$direccionNumero = $_POST['numeroDireccion'] ?? '';
+$stringEstudio = '';
+$usuario = new Usuario($nombre, $apellido, $edad, $direccion . $direccionNumero, $nivelEstudio, $sexo, $deportes);
 
+function salidaPersona($usuario) {
+    switch ($usuario->getNivelEstudio()) {
+    case "1":
+        $stringEstudio = "mi nivel de estudio es primario incompleto";
+        break;
+    case "2":
+        $stringEstudio = "mi nivel de estudio es primario completo";
+        break;
+    case "3":
+        $stringEstudio = "mi nivel de estudio es secundaria terminada";
+        break;
 
-    public function salidaPersona($nombre, $apellido, $edad, $direccion, $nivelEstudio, $sexo, $deportes) {
-
-        $usuario = new Usuario($nombre, $apellido, $edad, $direccion, $nivelEstudio, $sexo, $deportes);
-if (isset($_GET['NivelEstudio'])) {
-    switch ($_GET['NivelEstudio']) {
-        case 1:
-            $nivelEstudio = "estudios incompletos";
-            break;
-        case 2:
-            $nivelEstudio = "primaria terminada";
-            break;
-        case 3:
-            $nivelEstudio = "secundaria terminada";
-            break;
-        default:
-            $nivelEstudio = "No especificado";
-            break;
+}  
+    if ($usuario->getEdad() > 18) {
+        $salida = "Hola, yo soy " . $usuario->getNombre() . " " . $usuario->getApellido() . ", soy mayor de edad, tengo " . $usuario->getEdad() . " años, vivo en " . $usuario->getDireccion() . ", tengo " . $stringEstudio . " y mi sexo es " . $usuario->getSexo() . ".";
+    } else {
+        $salida = "Hola, yo soy " . $usuario->getNombre() . " " . $usuario->getApellido() . ", tengo " . $usuario->getEdad() . " años, vivo en " . $usuario->getDireccion()  . " y mi sexo es " . $usuario->getSexo() . ".";
     }
-} else {
-    $nivelEstudio = "No especificado";
+    return $salida;
 }
 
-if ($usuario->getEdad() > 18) {
-    $salida = "Hola, yo soy ".$nombre . " " .$apellido.", soy mayor de edad, tengo  ". $edad ." años, vivo en ".$direccion. ", tengo " .$nivelEstudio." y mi sexo es ".$sexo;
-} else {
-    $salida = "Hola, yo soy ".$nombre. " ". $apellido. ", tengo ".$edad. "años, vivo en ".$direccion. " ".$direccionNumero." , mi nivel de estudio es ".$nivelEstudio. "y mi sexo es " .$sexo.";
-}
-if (count($usuario->getDeportes()) > 0) {
-    $salida .=  Practico los siguientes deportes: ";
-    $salida .= " ";
-    foreach ($usuario->getDeportes() as $value) {
-        $salida .= " " .$value. " ";
-    }
-    $salida .= "";
-}
+$usuario = new Usuario($nombre, $apellido, $edad, $direccion, $nivelEstudio, $sexo, $deportes);
+$salida = salidaPersona($usuario);
 
-return $salida;
-}
-}
 ?>
