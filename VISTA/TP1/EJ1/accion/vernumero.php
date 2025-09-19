@@ -8,12 +8,14 @@
 <?php
 
 
-include_once('../../../../CONTROL/TP1/EJ1/numero.php');
+include_once('../../../../CONTROL/TP1/EJ1/Numero.php');
 
 
 if ($_POST) {
 $numeroFormulario = $_POST['numero'];
-
+} else if ($_GET) {
+   $numeroFormulario = $_GET['numero']; 
+ }
 $resultado = new Numero();
 
 $tipo = $resultado->tipoNumero($numeroFormulario);
@@ -30,7 +32,7 @@ switch ($tipo) {
         break;  
 }
 
-}
+
 ?>
 <?php
 echo $salida;

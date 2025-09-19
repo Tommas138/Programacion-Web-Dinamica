@@ -9,7 +9,15 @@
     <?php
     include_once '../../../../CONTROL/TP1/EJ8/Cine.php';
     $cine = new Cine();
-    $cine->calcularEntrada();
+    if ($_POST) {
+        $edad = $_POST['edad'];
+        $estudiante = $_POST['estudiante'];
+    } else if ($_GET) {
+        $edad = $_GET['edad'];
+        $estudiante = $_GET['estudiante'];
+    }
+
+    $cine->calcularEntrada($edad, $estudiante);
     $precio = $cine->getPrecio();
     if ($precio) {
         echo "<h1>El precio de su entrada es: $" . $precio . "</h1>";

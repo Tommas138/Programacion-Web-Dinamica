@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>FORMULARIO</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <?php
+        include_once '../../estructura/head.php';
+        ?>
+    </head>
+    <a href="../../../../menu.php">Volver al menú</a>
+    <body>
+        <?php
+        include_once '../../estructura/header.php';
+        ?>
+        <form id="form3" name="form3" method="POST" action="ACCION/destino.php" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input name="nombre_form" type="text" id="validationCustom01" class="form-control" required> <br> <br>
+                <div class="valid-feedback">
+                    Se ve bien!
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input name="apellido_form" type="text" id="validationCustom02" class="form-control" required>
+                <div class="valid-feedback">
+                    Se ve bien!
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationCustom03" class="form-label">Edad:</label>
+                <input name="edad_form" type="number" id="validationCustom03" class="form-control" required>
+                <div class="invalid-feedback">
+                    Por favor ingrese su edad
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationCustom04" class="form-label">Direccion:</label>
+                <input name="direccion_form" type="text" id="validationCustom04" class="form-control" required>
+                <div class="invalid-feedback">
+                    Por favor ingrese una direccion
+                </div>
+            </div>
+            <input name="submit" type="submit" value="Aceptar">
+        </form>
+        <script src="JS/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<?php
+    include_once '../../../estructura/footer.php';
+    ?>
+    </body>
+</html>

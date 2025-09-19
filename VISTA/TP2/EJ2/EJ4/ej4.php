@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Formulario ejercicio 3</h1>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <?php
+        include_once '../../estructura/head.php';
+        ?>
+    </head>
+    <body>
+        <?php
+        include_once '../../estructura/header.php';
+        ?>
+        <a href="../../../../menu.php">Volver al menú</a>
+        <div class="conteiner">
+            <form id="form3" name="form3" method="get" action="ACCION/ej4.php" class="row g-3 needs-validation" novalidate>
+                <div class="row-md-3">
+                    <label for="nombre_form" class="form-label">Nombre: </label>  
+                    <input id="nombre_form" name="nombre_form" type="text" class="form-control" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+$" required/>
+                    <div class="valid-feedback">
+                        El dato esta ingresado
+                    </div>
+                    <div class="invalid-feedback">
+                        Es necesario poner un nombre
+                    </div>
+                </div> <br/>
+                <div class="row-md-3">
+                    <label for="apellido_form" class="form-label">Apellido: </label>  
+                    <input id="apellido_form" name="apellido_form" type="text" class="form-control" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+$" required/> 
+                    <div class="valid-feedback">
+                        El dato esta ingresado
+                    </div>
+                    <div class="invalid-feedback">
+                        Es necesario poner un apellido
+                    </div>
+                </div>
+                <div class="row-md-3">
+                    <label for="edad_form" class="form-label">Edad: </label>  
+                    <input id="edad_form" name="edad_form" type="number" class="form-control" min="0" required/> 
+                    <!-- escribo los div de los comentarios -->
+                    <div class="valid-feedback">
+                        El dato esta ingresado
+                    </div>
+                    <div class="invalid-feedback">
+                        Es necesario poner la edad
+                    </div>
+                </div>
+                <div class="row-md-3"
+                    <label for="direccion_form" class="form-label">Direccion: </label>  
+                    <input id="direccion_form" name="direccion_form" class="form-control" type="text" pattern="^[A-Za-z0-9\s]+$" required/>
+                    <div class="valid-feedback" >
+                        El dato esta ingresado
+                    </div>
+                    <div class="invalid-feedback">
+                        Es necesario poner una direccion
+                    </div>
+                </div>
+                <input type="submit" name="submit" value="Enviar" />
+            </form>
+        </div>
+
+        <script src="JS/script.js"></script>
+    <?php
+    include_once '../../../estructura/footer.php';
+    ?>
+    </body>
+
+</html>

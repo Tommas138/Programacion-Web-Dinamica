@@ -11,7 +11,11 @@
     include_once ("ACCION/verificar2.php");
 
     $datos = new validar();
-    $array = $datos->validador($_POST);
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $array = $datos->validador($_POST);
+    } else if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        $array = $datos->validador($_GET);
+    }
     $titulo = $array[0];
     $actores = $array[1];
     $director = $array[2];

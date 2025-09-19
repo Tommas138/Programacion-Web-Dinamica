@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <h1>Formulario ejercicio 2</h1>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <?php
+            include_once '../../estructura/head.php';
+            ?>
+        </head>
+        <body>
+            <?php
+            include_once '../../estructura/header.php';
+            ?>
+            <a href="../../../../menu.php">Volver al menú</a>
+            <div class="container">
+                <form id="form2" name="form2" method="get" action="ACCION/ej2.php" class="row g-3 needs-validation" novalidate>
+                    <div class="row-4" id="lunes">
+                        <label for="lunes_form" class="form-label">Lunes: </label>
+                        <input name="lunes_form" id="lunes_form" type="number" class="form-control" min="0" required/>
+                        <!-- escribo los div de los comentarios -->
+                         <div class="valid-feedback">
+                            las horas estan bien puestas
+                         </div>
+                         <div class="invalid-feedback">
+                            Es necesario que ingrese la cantidad de horas
+                         </div>
+                    </div>
+                    <div class="row-4" id="martes">
+                       <label for="martes_form" class="form-label">Martes:</label>  
+                       <input name="martes_form" id="martes_form" type="number" class="form-control" min="0" required/> 
+                        <div class="valid-feedback">
+                            Las horas estan bien puestas
+                        </div>
+                        <div class="invalid-feedback">
+                            Es necesario que ingrese la cantidad de horas
+                        </div>
+                    </div>
+                    <div class="row-4">
+                        <label for="miercoles_form" class="form-label">Miercoles:</label>  
+                        <input name="miercoles_form" id="miercoles_form" type="number" class="form-control" min="0" required/> 
+                        <div class="valid-feedback">
+                            Las horas estan bien puestas
+                        </div>
+                        <div class="invalid-feedback">
+                            Es necesario que ingrese la cantidad de horas
+                        </div>
+                    </div>
+                    <div class="row-4">
+                        <label for="jueves_form" class="form-label">jueves:</label> 
+                        <input name="jueves_form" id="jueves_form" type="number" class="form-control" min="0" required/> 
+                        <div class="valid-feedback">
+                            Las horas estas bien puestas
+                        </div>
+                        <div class="invalid-feedback">
+                            Es necesario que ingrese la cantidad de horas
+                        </div>
+                    </div>
+                    <div class="row-4">
+                        <label for="viernes_form" class="form-label">viernes:</label> 
+                        <input name="viernes_form" id="viernes_form" type="number" class="form-control" min="0" required/> 
+                        <div class="valid-feedback">
+                            Las horas estas bien puestas
+                        </div>
+                        <div class="invalid-feedback">
+                            Es necesario que ingrese la cantidad de horas
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" value="Aceptar" />
+                </form>
+            </div>
+            <script src="JS/script.js"></script>
+    <?php
+    include_once '../../../estructura/footer.php';
+    ?>
+        </body>
+
+    </html>

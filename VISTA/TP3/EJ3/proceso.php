@@ -15,8 +15,12 @@
 <?php 
     include_once ('ACCION/accion.php');
 
-
-    $array = validador($_POST);
+    if ($_POST) {
+        $array = validador($_POST);
+    } else if ($_GET){ 
+        $array = validador($_GET);
+    }
+    
     $titulo = $array[0];
     $actores = $array[1];
     $director = $array[2];

@@ -3,14 +3,26 @@
 include_once '../../../../../MODELO/TP2/EJ2/Usuario.php';
 include_once '../../../../../CONTROL/TP2/EJ2/EJ6/salidaSaludo.php';
 
-$nombre = $_POST['Nombre'] ?? '';
-$apellido = $_POST['Apellido'] ?? '';
-$edad = $_POST['Edad'] ?? 0;
-$direccion = $_POST['Direccion'] ?? '';
-$nivelEstudio = null;
-$sexo = $_POST['Sexo'] ?? '';
-$deportes = $_POST['Deportes'] ?? [];
-$direccionNumero = $_POST['numeroDireccion'] ?? '';
+if ($_POST) {
+    $nombre = $_POST['Nombre'] ?? '';
+    $apellido = $_POST['Apellido'] ?? '';
+    $edad = $_POST['Edad'] ?? 0;
+    $direccion = $_POST['Direccion'] ?? '';
+    $nivelEstudio = null;
+    $sexo = $_POST['Sexo'] ?? '';
+    $deportes = $_POST['Deportes'] ?? [];
+    $direccionNumero = $_POST['numeroDireccion'] ?? '';
+} else if ($_GET) {
+    $nombre = $_GET['Nombre'] ?? '';
+    $apellido = $_GET['Apellido'] ?? '';
+    $edad = $_GET['Edad'] ?? 0;
+    $direccion = $_GET['Direccion'] ?? '';
+    $nivelEstudio = null;
+    $sexo = $_GET['Sexo'] ?? '';
+    $deportes = $_GET['Deportes'] ?? [];
+    $direccionNumero = $_GET['numeroDireccion'] ?? '';
+}
+
 
 $usuario = new Usuario($nombre, $apellido, $edad, $direccion . " " . $direccionNumero, $nivelEstudio, $sexo, $deportes);
 

@@ -16,10 +16,8 @@ public function setPrecio($precio) {
     $this->precio = $precio;
 }
 
-public function calcularEntrada(){
+public function calcularEntrada($edad, $estudiante){
     $precio = 0;
-    $edad = $_POST['edad'];
-    $estudiante = $_POST['estudiante'];
     if(!$estudiante ){
         $estudiante = 0;
     }
