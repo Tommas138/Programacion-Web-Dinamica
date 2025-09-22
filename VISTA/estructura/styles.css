@@ -1,0 +1,51 @@
+        .hover-effect:hover {
+            background-color: #f8f9fa !important;
+            transform: translateX(5px);
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            filter: invert(1);
+            width: 8%;
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            background-color: #6c757d;
+        }
+        
+        .card {
+            border-radius: 15px;
+        }
+        
+        .list-group-item {
+            border: none;
+            padding: 0.75rem 1rem;
+        }
+        
+        .carousel-item {
+            min-height: 400px;
+        }
+        
+        .tp-title {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        
+        .tp1-icon { color: #0d6efd; }
+        .tp2-icon { color: #198754; }
+        .tp3-icon { color: #dc3545; }
+        
+        .carousel-inner {
+            border-radius: 10px;
+        }
+        
+        .slide-content {
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 0.5rem;
+        }

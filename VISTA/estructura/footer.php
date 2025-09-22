@@ -1,5 +1,5 @@
 <!--Footer-->
-<footer class="footer-custom shadow-lg mt-auto">
+<footer class="footer-custom shadow-lg mt-auto w-100">
     <div class="container py-3">
         <p class="text-center text-white fw-bold fs-5 mb-0">
             <i class="fas fa-code me-2 text-warning"></i>
