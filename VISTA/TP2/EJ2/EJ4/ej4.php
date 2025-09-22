@@ -5,15 +5,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <?php
-        include_once '../../estructura/head.php';
+        include_once '../../../estructura/head.php';
         ?>
     </head>
     <body>
         <?php
-        include_once '../../estructura/header.php';
+        include_once '../../../estructura/header.php';
         ?>
         <a href="../../../../menu.php">Volver al menú</a>
-        <div class="conteiner">
+        <div class="conteiner d-flex justify-content-center">
             <form id="form3" name="form3" method="get" action="ACCION/ej4.php" class="row g-3 needs-validation" novalidate>
                 <div class="row-md-3">
                     <label for="nombre_form" class="form-label">Nombre: </label>  
@@ -46,7 +46,7 @@
                         Es necesario poner la edad
                     </div>
                 </div>
-                <div class="row-md-3"
+                <div class="row-md-3">
                     <label for="direccion_form" class="form-label">Direccion: </label>  
                     <input id="direccion_form" name="direccion_form" class="form-control" type="text" pattern="^[A-Za-z0-9\s]+$" required/>
                     <div class="valid-feedback" >

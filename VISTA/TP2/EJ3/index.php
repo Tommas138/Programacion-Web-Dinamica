@@ -5,17 +5,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 <!--Revisar con lian--->
-    <style>
-        body {
-            background-color: #4f5052; /* Fondo gris claro */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-    </style>
     <?php
-    include_once 'VISTA/estructura/head.php';
+    include_once '../../estructura/head.php';
     ?>
 </head>
 <body>
@@ -68,4 +59,7 @@
 <script src="JS/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+    <?php
+        include_once '../../estructura/footer.php';
+    ?>
 </html>

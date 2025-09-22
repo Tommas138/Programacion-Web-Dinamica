@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <?php
-    include_once '../../estructura/head.php';
+    include_once '../../../estructura/head.php';
     ?>
 </head>
 <body>
     <?php
-        include_once '../../estructura/header.php';
+        include_once '../../../estructura/header.php';
     ?>
     <a href="../../../../menu.php">Volver al menú</a>
     <form id="formularioCalculadora" method="get" action="ACCION/calculadora.php">

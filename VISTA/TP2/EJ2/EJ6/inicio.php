@@ -8,12 +8,12 @@
     <title>Inicio</title>
     <script src="js/validacion.js"></script>
     <?php
-    include_once '../../estructura/head.php';
+    include_once '../../../estructura/head.php';
     ?>
 </head>
 <body>
     <?php
-        include_once '../../estructura/header.php';
+        include_once '../../../estructura/header.php';
     ?>
     <a href="../../../../menu.php">Volver al menú</a>
     <h2>Ingrese sus datos</h2>
