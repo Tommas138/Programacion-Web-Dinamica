@@ -7,7 +7,7 @@ $objControladorPersona=new C_Persona();
 $datos = data_submitted();
 $modifico=$objControladorPersona->modificar($datos);
 
-
+//
 if($modifico){
     ?>
     <div class="container-md my-5 w-75">
