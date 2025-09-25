@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <?php
-    include_once '../../../estructura/head.php';
+    require_once '../../../estructura/head.php';
     ?>
 </head>
 <body>
     <?php
-        include_once '../../../estructura/header.php';
+        require_once '../../../estructura/header.php';
     ?>
     <a href="../../../../menu.php">Volver al menú</a>
     <form id="formularioCalculadora" method="get" action="ACCION/calculadora.php">
@@ -28,7 +28,7 @@
     </form>
     <script src="validacion1.js"></script>
     <?php
-    include_once '../../../estructura/footer.php';
+    require_once '../../../estructura/footer.php';
     ?>
 </body>
 

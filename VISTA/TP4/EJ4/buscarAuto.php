@@ -1,7 +1,7 @@
 <script src="JS/validacion.js"></script>
 <?php
 
-include_once('Estructura/Utilidades/links.php');
+require_once('Estructura/Utilidades/links.php');
 
 ?>
 

@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <title>Operaciones Matemáticas</title>
     <?php
-    include_once '../../estructura/head.php';
+    require_once '../../estructura/head.php';
     ?>
 </head>
 <body>
     <?php
-        include_once '../../estructura/header.php';
+        require_once '../../estructura/header.php';
     ?>
     <a href="../../../menu.php">Volver al menú</a>
     <h2>Calculadora Simple</h2>
@@ -33,7 +33,7 @@
         <input type="submit" value="Calcular">
     </form>
     <?php
-    include_once '../../estructura/footer.php';
+    require_once '../../estructura/footer.php';
     ?>
 </body>
 </html>

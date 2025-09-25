@@ -4,13 +4,13 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <?php
-        include_once '../../../estructura/head.php';
+        require_once '../../../estructura/head.php';
         ?>
     </head>
     <a href="../../../../menu.php">Volver al menú</a>
     <body>
         <?php
-        include_once '../../../estructura/header.php';
+        require_once '../../../estructura/header.php';
         ?>
         <form id="form3" name="form3" method="POST" action="ACCION/destino.php" class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
@@ -49,7 +49,7 @@
         <script src="JS/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 <?php
-    include_once '../../../estructura/footer.php';
+    require_once '../../../estructura/footer.php';
     ?>
     </body>
 </html>

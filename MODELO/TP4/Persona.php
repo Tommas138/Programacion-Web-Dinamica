@@ -1,6 +1,6 @@
 <?php
-include_once('conector/BaseDatos.php');
-include_once('Auto.php');
+require_once('conector/BaseDatos.php');
+require_once('Auto.php');
 
 Class Persona {
     private $nroDni;

@@ -1,6 +1,6 @@
 <?php
 
-include_once(__DIR__ . '/../MODELO/Persona.php');
+require_once('../../MODELO/TP4/Persona.php');
 
 Class C_Persona {
 

@@ -5,7 +5,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <?php
-    include_once '../../estructura/head.php';
+    require_once '../../estructura/head.php';
     ?>
     <link href="style.css" rel="stylesheet">
 </head>
@@ -13,7 +13,7 @@
 
 <body>
     <?php
-        include_once '../../estructura/header.php';
+        require_once '../../estructura/header.php';
     ?>
     <main class="container mt-5">
         <a class="btn btn-primary"  href="../../../menu.php">Volver al menú</a><br><br> 
@@ -119,7 +119,7 @@
     </main>
 
     <?php
-    include_once '../../estructura/footer.php';
+    require_once '../../estructura/footer.php';
     ?>
     <script src="JS/validacionPropia.js"></script>
      <script src="JS/script.js"></script>

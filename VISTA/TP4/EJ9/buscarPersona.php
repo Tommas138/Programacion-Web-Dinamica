@@ -1,8 +1,8 @@
 <?php
-include_once(__DIR__ . '/../CONTROL/C_Persona.php');
-include_once(__DIR__ . '/../CONTROL/C_Auto.php');
-include_once(__DIR__ .'/Estructura/Utilidades/funciones.php');
-include_once(__DIR__. '/Estructura/Utilidades/links.php');
+require_once('../../../CONTROL/TP4/C_Persona.php');
+require_once('../../../CONTROL/TP4/C_Auto.php');
+require_once(__DIR__ . '/Estructura/Utilidades/funciones.php');
+require_once(__DIR__. '/Estructura/Utilidades/links.php');
 $objControlPersona = new C_Persona();
 $objPersonas = $objControlPersona->buscar(NULL);
 $cantPersonas = count($objPersonas);

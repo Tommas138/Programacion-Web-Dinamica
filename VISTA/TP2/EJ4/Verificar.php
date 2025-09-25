@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php 
-    include_once ("ACCION/verificar2.php");
+    require_once ("ACCION/verificar2.php");
 
     $datos = new validar();
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {

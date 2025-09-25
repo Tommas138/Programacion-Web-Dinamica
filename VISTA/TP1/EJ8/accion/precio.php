@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    include_once '../../../../CONTROL/TP1/EJ8/Cine.php';
+    require_once '../../../../CONTROL/TP1/EJ8/Cine.php';
     $cine = new Cine();
     if ($_POST) {
         $edad = $_POST['edad'];

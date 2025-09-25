@@ -163,8 +163,6 @@ function aplicarMensaje(elemento, condicion) {
     const telefonoRegex = /^[\d\s-]*$/; 
     
     aplicarEstilo(telefono, telefono.value && !telefonoRegex.test(telefono.value));
-
-
     
     return esValido;
 

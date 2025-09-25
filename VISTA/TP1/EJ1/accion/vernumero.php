@@ -8,7 +8,7 @@
 <?php
 
 
-include_once('../../../../CONTROL/TP1/EJ1/Numero.php');
+require_once('../../../../CONTROL/TP1/EJ1/Numero.php');
 
 
 if ($_POST) {

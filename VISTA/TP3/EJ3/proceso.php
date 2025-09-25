@@ -13,7 +13,7 @@
     
 
 <?php 
-    include_once ('ACCION/accion.php');
+    require_once ('ACCION/accion.php');
 
     if ($_POST) {
         $array = validador($_POST);

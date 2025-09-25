@@ -7,7 +7,7 @@
 </head>
     <body>
         <?php
-            include_once '../../estructura/header.php';
+            require_once '../../estructura/header.php';
         ?>
         <a href="../../../menu.php">Volver al menú</a>
         <h1>Ingrese un numero: </h1>
@@ -17,7 +17,7 @@
             <button type="submit">Enviar</button>
         </form>
     <?php
-    include_once '../../estructura/footer.php';
+    require_once '../../estructura/footer.php';
     ?>
     </body>
 </html>

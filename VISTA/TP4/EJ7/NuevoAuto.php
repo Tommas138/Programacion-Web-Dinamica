@@ -1,7 +1,7 @@
 <?php
  //agregar head y footer
-include_once('Estructura/Utilidades/links.php');
-include_once('Estructura/Utilidades/funciones.php');
+require_once('Estructura/Utilidades/links.php');
+require_once('Estructura/Utilidades/funciones.php');
 ?>
 
 <div class="container-md justify-content-center" style="height: 80vh;">

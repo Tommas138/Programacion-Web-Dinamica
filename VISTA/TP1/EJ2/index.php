@@ -6,12 +6,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <title> Formulario ej2</title>
 <?php
-include_once '../../estructura/head.php';
+require_once '../../estructura/head.php';
 ?>
 </head>
     <body> 
         <?php
-            include_once '../../estructura/header.php';
+            require_once '../../estructura/header.php';
         ?>
     <a href="../../../menu.php">Volver al menú</a>
     <form id= "form2" name= "form2" method="GET" action="accion/destino.php">
@@ -23,7 +23,7 @@ include_once '../../estructura/head.php';
         <input name="submit" type="submit" value="ACEPTAR">
     </form>
     <?php
-    include_once '../../estructura/footer.php';
+    require_once '../../estructura/footer.php';
     ?>
     </body>
 </html>

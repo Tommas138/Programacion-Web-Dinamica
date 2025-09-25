@@ -11,7 +11,7 @@
     
     <?php
 
-    include_once('../../../../CONTROL/TP1/EJ6/calculos.php');
+    require_once('../../../../CONTROL/TP1/EJ6/calculos.php');
 
     if ($_POST) {
         $nombre = $_POST['nombre_form'];

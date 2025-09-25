@@ -1,7 +1,7 @@
 <?php
-    include_once ('../../CONTROL/C_Auto.php');
-    include_once ('../../CONTROL/C_Persona.php');
-    include_once ('../Estructura/Utilidades/funciones.php');
+    require_once ('../../CONTROL/TP4/C_Auto.php');
+    require_once ('../../CONTROL/TP4/C_Persona.php');
+    require_once ('../Estructura/Utilidades/funciones.php');
 
     
     $data = data_submitted();

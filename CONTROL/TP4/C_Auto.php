@@ -1,7 +1,7 @@
 <?php
 
-include_once(__DIR__ . '/../MODELO/Auto.php');
-include_once 'C_Persona.php';
+require_once('../../MODELO/TP4/Auto.php');
+require_once 'C_Persona.php';
 
 Class C_Auto {
 

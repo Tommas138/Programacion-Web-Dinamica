@@ -1,6 +1,6 @@
 <?php
 
-    include_once("../../../CONTROL/TP3/EJ3/validar.php");
+    require_once("../../../CONTROL/TP3/EJ3/validar.php");
 
     function validador($tipo) {
         $titulo = $tipo['titulo'];

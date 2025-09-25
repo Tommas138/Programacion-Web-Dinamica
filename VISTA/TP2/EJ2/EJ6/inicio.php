@@ -8,12 +8,12 @@
     <title>Inicio</title>
     <script src="js/validacion.js"></script>
     <?php
-    include_once '../../../estructura/head.php';
+    require_once '../../../estructura/head.php';
     ?>
 </head>
 <body>
     <?php
-        include_once '../../../estructura/header.php';
+        require_once '../../../estructura/header.php';
     ?>
     <a href="../../../../menu.php">Volver al menú</a>
     <h2>Ingrese sus datos</h2>
@@ -48,7 +48,7 @@
         <input type="submit" value="Enviar">
     </form>
     <?php
-    include_once '../../../estructura/footer.php';
+    require_once '../../../estructura/footer.php';
     ?>
 </body>
 </html>

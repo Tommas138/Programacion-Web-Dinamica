@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="style.css">
 <!--Revisar con lian--->
     <?php
-    include_once '../../estructura/head.php';
+    require_once '../../estructura/head.php';
     ?>
 </head>
 <body>
 
     <?php
-        include_once '../../estructura/header.php';
+        require_once '../../estructura/header.php';
     ?>
 <div class="container">
     <div class="row justify-content-center">
@@ -60,6 +60,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
     <?php
-        include_once '../../estructura/footer.php';
+        require_once '../../estructura/footer.php';
     ?>
 </html>

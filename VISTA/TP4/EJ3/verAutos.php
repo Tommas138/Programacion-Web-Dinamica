@@ -1,7 +1,7 @@
 <?php
 
-include_once('../CONTROL/C_Auto.php');
-include_once('Estructura/Utilidades/links.php');
+require_once('../../CONTROL/TP4/C_Auto.php');
+require_once('Estructura/Utilidades/links.php');
 
 
 $objControlAuto = new C_Auto();

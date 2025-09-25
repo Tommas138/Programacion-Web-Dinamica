@@ -11,7 +11,7 @@
     
     <?php
 
-include_once('../../../../../CONTROL/TP2/EJ2/EJ5/Calculos.php');
+require_once('../../../../../CONTROL/TP2/EJ2/EJ5/Calculos.php');
 
 
     if ($_POST) {

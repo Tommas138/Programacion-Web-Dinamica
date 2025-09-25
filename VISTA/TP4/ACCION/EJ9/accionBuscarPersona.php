@@ -1,9 +1,9 @@
 <script src="../JS/validacion.js"></script>
 <?php
 
-include_once(__DIR__ . '/../../CONTROL/C_Persona.php');
-include_once(__DIR__ . '/../Estructura/Utilidades/funciones.php');
-include_once(__DIR__ . '/../Estructura/Utilidades/links.php');
+require_once(__DIR__ . '/../../CONTROL/TP4/C_Persona.php');
+require_once(__DIR__ . '/../Estructura/Utilidades/funciones.php');
+require_once(__DIR__ . '/../Estructura/Utilidades/links.php');
 
 
 

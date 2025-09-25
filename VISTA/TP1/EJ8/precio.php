@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    include_once '../../../MODELO/TP1/EJ8/Cine.php';
+    require_once '../../../MODELO/TP1/EJ8/Cine.php';
     $cine = new Cine();
     $cine->calcularEntrada();
     $precio = $cine->getPrecio();

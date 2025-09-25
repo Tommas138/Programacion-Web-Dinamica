@@ -1,7 +1,7 @@
 <?php
 
-include_once('conector/BaseDatos.php');
-include_once('Persona.php');
+require_once('conector/BaseDatos.php');
+require_once('Persona.php');
 
 Class Auto {
     private $patente;

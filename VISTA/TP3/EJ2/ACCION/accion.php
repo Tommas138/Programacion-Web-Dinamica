@@ -7,7 +7,7 @@
 
     <body>
     <?php
-    include_once('../../../../CONTROL/TP3/EJ2/subirArchivo.php');
+    require_once('../../../../CONTROL/TP3/EJ2/subirArchivo.php');
     $dirDestino = "../../../../MODELO/TP3/EJ2";
 
     if ($_FILES['miArchivo']['error'] <= 0 ) {

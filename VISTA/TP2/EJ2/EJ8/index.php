@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <?php
-    include_once '../../../estructura/head.php';
+    require_once '../../../estructura/head.php';
     ?>
 </head>
 <body>
     <?php
-        include_once '../../../estructura/header.php';
+        require_once '../../../estructura/header.php';
     ?>
     <form id="formularioEntradas" method="post" action="ACCION/precio.php">
         <label for="edad">Edad</label>
@@ -25,7 +25,7 @@
     
     <script src="validacion2.js"></script>
     <?php
-    include_once '../../../estructura/footer.php';
+    require_once '../../../estructura/footer.php';
     ?>
 </body>
 

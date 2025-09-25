@@ -1,5 +1,5 @@
 <?php
-include_once '../../../CONTROL/TP1/EJ7/Calculadora.php';
+require_once '../../../CONTROL/TP1/EJ7/Calculadora.php';
 $num1 = $_POST['num1'];
 $num2 = $_POST['num2'];
 $operacion = $_POST['operacion'];

@@ -1,5 +1,5 @@
 <?php
-include_once('../../../../../CONTROL/TP2/EJ2/EJ7/Calculadora.php');
+require_once('../../../../../CONTROL/TP2/EJ2/EJ7/Calculadora.php');
 
     if(!empty($GET["operandoUno"]) && !empty($_GET["operandoDos"]) && !empty($_GET["operacion"])){
         $resultado = 0;

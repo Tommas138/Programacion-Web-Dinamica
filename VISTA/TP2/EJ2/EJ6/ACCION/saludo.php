@@ -1,7 +1,7 @@
 <?php
 
-include_once '../../../../../MODELO/TP2/EJ2/Usuario.php';
-include_once '../../../../../CONTROL/TP2/EJ2/EJ6/salidaSaludo.php';
+require_once '../../../../../MODELO/TP2/EJ2/Usuario.php';
+require_once '../../../../../CONTROL/TP2/EJ2/EJ6/salidaSaludo.php';
 
 if ($_POST) {
     $nombre = $_POST['Nombre'] ?? '';

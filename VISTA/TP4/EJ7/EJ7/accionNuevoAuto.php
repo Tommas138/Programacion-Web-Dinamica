@@ -1,9 +1,9 @@
 <?php
 //Insertar el header 
-include_once(__DIR__ . '/../Estructura/Utilidades/links.php');
-include_once(__DIR__ . '/../Estructura/Utilidades/funciones.php');
-include_once('../../CONTROL/C_Auto.php');
-include_once('../../CONTROL/C_Persona.php');
+require_once(__DIR__ . '/../Estructura/Utilidades/links.php');
+require_once(__DIR__ . '/../Estructura/Utilidades/funciones.php');
+require_once('../../TP4/CONTROL/C_Auto.php');
+require_once('../../TP4/CONTROL/C_Persona.php');
 
 $datos = data_submitted();
 $dni = $datos['dniDuenio'];

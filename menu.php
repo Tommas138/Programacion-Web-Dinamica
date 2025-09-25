@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php
-    include_once 'VISTA/estructura/head.php';
+    require_once 'VISTA/estructura/head.php';
 ?>
 <body class="bg-dark vh-100">
     <div class="d-flex justify-content-center align-items-center flex-column mb-4 bg-white" >
 
     <?php
-        include_once 'VISTA/estructura/header.php';
+        require_once 'VISTA/estructura/header.php';
     ?>
     <div class="card shadow-lg p-3 d-flex align-center justify-content-center" style="width: 300px;">
         <h2 class="text-center mb-3">Menú</h2>
@@ -75,7 +75,7 @@
         </div>
     </div>
     <?php
-        include_once 'VISTA/estructura/footer.php';
+        require_once 'VISTA/estructura/footer.php';
     ?>
     </div>
 </body>

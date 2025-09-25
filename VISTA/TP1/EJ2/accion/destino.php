@@ -7,7 +7,7 @@
     <body>
         <?php
 
-        include_once('../../../../CONTROL/TP1/EJ2/Calculo.php');
+        require_once('../../../../CONTROL/TP1/EJ2/Calculo.php');
         if ($_GET) {
             $horasDinamica = [];
             $horasLunes = intval($_GET['horario_lunes']);

@@ -1,8 +1,8 @@
 <?php
 
-include_once('../../../../CONTROL/TP2/EJ3/calculo.php');
-include_once('../../../../CONTROL/TP2/EJ3/Usuario.php');
-include_once('../../../../MODELO/TP2/EJ3/BDUsuarios.php');
+require_once('../../../../CONTROL/TP2/EJ3/calculo.php');
+require_once('../../../../CONTROL/TP2/EJ3/Usuario.php');
+require_once('../../../../MODELO/TP2/EJ3/BDUsuarios.php');
 
 
 
