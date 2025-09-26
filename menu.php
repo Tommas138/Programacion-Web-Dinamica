@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    
     <link rel="stylesheet" href="VISTA/CSS/styles.css">
 </head>    
 
 <?php
     require_once 'VISTA/estructura/head.php';
 ?>
-<body class="bg-dark vh-100">
-    <div class="d-flex justify-content-center align-items-center flex-column mb-4 bg-white">
-
+<body class="min-vh-100 d-flex flex-column">
     <?php
         require_once 'VISTA/estructura/header.php';
     ?>
+    <div class="d-flex align-items-center flex-column mb-4 bg-white ">
+
     
-    <div class="p-4" style="width: 90%; max-width: 500px;">
+    
+    <div class="p-4" style="width: 90%; max-width: 500px; height:695px;">
         <h2 class="text-center mb-4">
             <i class="bi bi-collection me-2"></i>Menú de Trabajos Prácticos
         </h2>
@@ -181,7 +183,8 @@
             </div>
         </div>
     </div>
-    <?php
+</div>
+        <?php
         require_once 'VISTA/estructura/footer.php';
     ?>
 

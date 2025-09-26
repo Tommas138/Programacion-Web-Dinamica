@@ -1,4 +1,4 @@
-<header class="w-100" > 
+<header class="w-100"> 
     <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
         <div class="container">
             <p class="text-black navbar-brand fw-bold fs-3" href="../../../index.php">

@@ -8,15 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../CSS/stylesNuevaPersona.css">
 </head>
-
-<?php
-
-require_once('../../estructura/header.php');
-
-?>
-
-<body>
-    <div class="container">
+<body style="margin-top: -19px;">
+    <?php
+    require_once('../../estructura/header.php');
+    ?>
+    <div class="container py-5">
         <div class="form-container">
             <form class="needs-validation" id="formPersona" action="ACCION/accionNuevaPersona.php" method="POST" novalidate>
                 <div class="form-group" id="dniInput">
@@ -60,12 +56,13 @@ require_once('../../estructura/header.php');
         </div>
     </div>
     <script src="../JS/validacionNuevaPersona.js"></script>
-</body>
-
-<?php
+    <?php
 
 require_once('../../estructura/footer.php');
 
 ?>
+</body>
+
+
 
 </html>

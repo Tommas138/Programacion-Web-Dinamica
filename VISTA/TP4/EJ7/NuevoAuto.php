@@ -60,6 +60,7 @@ require_once('../../estructura/header.php');
     <div class="text-center mt-4">
         <button class="btn btn-secondary" type="reset">Borrar</button>
         <button class="btn btn-primary" type="submit">Enviar</button>
+        <a class="btn btn-success p-2" style="background-color: #006efdff; border-color: #006efdff;" href="../../../menu.php">Volver al menú</a>
     </div>
     </form> 
     </div>

@@ -59,100 +59,98 @@ try {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-
 <?php
-
 require_once('../../estructura/header.php');
-
 ?>
-
-    <div class="result-container">
-        <div class="result-card">
-            <?php
-            if ($banderaPersona) {
-                echo '
-                <i class="fas fa-check-circle success-icon"></i>
-                <h1 class="result-title success-title">¡Registro Exitoso!</h1>
-                <p class="result-message">La persona ha sido registrada correctamente en el sistema.</p>
-                
-                <div class="person-info">
-                    <h3 class="mb-3"><i class="fas fa-user me-2"></i>Datos Registrados</h3>
-                    <div class="info-row">
-                        <span class="info-label">DNI:</span>
-                        <span class="info-value">' . htmlspecialchars($datos['nroDni']) . '</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Apellido:</span>
-                        <span class="info-value">' . htmlspecialchars($datos['apellido']) . '</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Nombre:</span>
-                        <span class="info-value">' . htmlspecialchars($datos['nombre']) . '</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Fecha de Nacimiento:</span>
-                        <span class="info-value">' . date('d/m/Y', strtotime($datos['fechaNac'])) . '</span>
-                    </div>';
-                
-                if (!empty($datos['telefono'])) {
+    <body>
+        <div class="result-container">
+            <div class="result-card">
+                <?php
+                if ($banderaPersona) {
                     echo '
-                    <div class="info-row">
-                        <span class="info-label">Teléfono:</span>
-                        <span class="info-value">' . htmlspecialchars($datos['telefono']) . '</span>
+                    <i class="fas fa-check-circle success-icon"></i>
+                    <h1 class="result-title success-title">¡Registro Exitoso!</h1>
+                    <p class="result-message">La persona ha sido registrada correctamente en el sistema.</p>
+                    
+                    <div class="person-info">
+                        <h3 class="mb-3"><i class="fas fa-user me-2"></i>Datos Registrados</h3>
+                        <div class="info-row">
+                            <span class="info-label">DNI:</span>
+                            <span class="info-value">' . htmlspecialchars($datos['nroDni']) . '</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Apellido:</span>
+                            <span class="info-value">' . htmlspecialchars($datos['apellido']) . '</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Nombre:</span>
+                            <span class="info-value">' . htmlspecialchars($datos['nombre']) . '</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Fecha de Nacimiento:</span>
+                            <span class="info-value">' . date('d/m/Y', strtotime($datos['fechaNac'])) . '</span>
+                        </div>';
+                    
+                    if (!empty($datos['telefono'])) {
+                        echo '
+                        <div class="info-row">
+                            <span class="info-label">Teléfono:</span>
+                            <span class="info-value">' . htmlspecialchars($datos['telefono']) . '</span>
+                        </div>';
+                    }
+                    
+                    if (!empty($datos['domicilio'])) {
+                        echo '
+                        <div class="info-row">
+                            <span class="info-label">Domicilio:</span>
+                            <span class="info-value">' . htmlspecialchars($datos['domicilio']) . '</span>
+                        </div>';
+                    }
+                    
+                    echo '
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="nuevaPersona.php" class="btn-custom">
+                            <i class="fas fa-plus me-2"></i>Registrar Otra Persona
+                        </a>
+                        <a href="../index.php" class="btn-custom btn-secondary-custom">
+                            <i class="fas fa-home me-2"></i>Volver al Inicio
+                        </a>
+                    </div>';
+                    
+                } else {
+                    echo '
+                    <i class="fas fa-times-circle error-icon"></i>
+                    <h1 class="result-title error-title">Error en el Registro</h1>
+                    <p class="result-message">
+                        No se pudo registrar la persona en el sistema. 
+                        Por favor, verifique los datos ingresados e intente nuevamente.
+                    </p>
+                    
+                    <div class="person-info">
+                        <h3 class="mb-3 text-danger"><i class="fas fa-exclamation-triangle me-2"></i>Posibles Causas del Error</h3>
+                        <ul class="text-start">
+                            <li>El DNI ya existe en el sistema</li>
+                            <li>Formato de datos incorrecto</li>
+                            <li>Error de conexión con la base de datos</li>
+                            <li>Campos obligatorios incompletos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="javascript:history.back()" class="btn-custom">
+                            <i class="fas fa-arrow-left me-2"></i>Volver e Intentar Nuevamente
+                        </a>
+                        <a href="../../../../menu.php" class="btn-custom btn-secondary-custom">
+                            <i class="fas fa-home me-2"></i>Volver al Inicio
+                        </a>
                     </div>';
                 }
-                
-                if (!empty($datos['domicilio'])) {
-                    echo '
-                    <div class="info-row">
-                        <span class="info-label">Domicilio:</span>
-                        <span class="info-value">' . htmlspecialchars($datos['domicilio']) . '</span>
-                    </div>';
-                }
-                
-                echo '
-                </div>
-                
-                <div class="mt-4">
-                    <a href="nuevaPersona.php" class="btn-custom">
-                        <i class="fas fa-plus me-2"></i>Registrar Otra Persona
-                    </a>
-                    <a href="../index.php" class="btn-custom btn-secondary-custom">
-                        <i class="fas fa-home me-2"></i>Volver al Inicio
-                    </a>
-                </div>';
-                
-            } else {
-                echo '
-                <i class="fas fa-times-circle error-icon"></i>
-                <h1 class="result-title error-title">Error en el Registro</h1>
-                <p class="result-message">
-                    No se pudo registrar la persona en el sistema. 
-                    Por favor, verifique los datos ingresados e intente nuevamente.
-                </p>
-                
-                <div class="person-info">
-                    <h3 class="mb-3 text-danger"><i class="fas fa-exclamation-triangle me-2"></i>Posibles Causas del Error</h3>
-                    <ul class="text-start">
-                        <li>El DNI ya existe en el sistema</li>
-                        <li>Formato de datos incorrecto</li>
-                        <li>Error de conexión con la base de datos</li>
-                        <li>Campos obligatorios incompletos</li>
-                    </ul>
-                </div>
-                
-                <div class="mt-4">
-                    <a href="javascript:history.back()" class="btn-custom">
-                        <i class="fas fa-arrow-left me-2"></i>Volver e Intentar Nuevamente
-                    </a>
-                    <a href="../../../../menu.php" class="btn-custom btn-secondary-custom">
-                        <i class="fas fa-home me-2"></i>Volver al Inicio
-                    </a>
-                </div>';
-            }
-            ?>
+                ?>
+            </div>
         </div>
-    </div>
+    </body>
 </body>
 </html>
 

@@ -1,3 +1,4 @@
+
         .carousel-custom{
             display: flex;
             flex-direction: column;
@@ -13,7 +14,11 @@
             background-color: #f8f9fa !important;
             transform: translateX(5px);
             transition: all 0.3s ease;
-        }
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+}
         
         .carousel-control-prev,
         .carousel-control-next {
@@ -79,11 +84,6 @@
 
 
 
-        #principal {
-            height: 760px;
-        }
-
-
         .carousel-item {
             min-height: 400px;
         }
@@ -116,3 +116,5 @@
         .carousel-control-next-icon {
             filter: invert(1);
         }
+
+        
