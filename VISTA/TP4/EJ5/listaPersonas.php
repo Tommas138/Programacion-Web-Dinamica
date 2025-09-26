@@ -1,8 +1,8 @@
 <?php
 
-require_once('MODELO/TP4/Persona.php');
-require_once('Estructura/Utilidades/funciones.php');
-require_once('Estructura/Utilidades/links.php');
+require_once('../../../MODELO/TP4/Persona.php');
+require_once('../Estructura/Utilidades/funciones.php');
+require_once('../Estructura/Utilidades/links.php');
 
 $arrPersonas = (new C_Persona())->buscar(NULL);
 $cantPersonas = count($arrPersonas);

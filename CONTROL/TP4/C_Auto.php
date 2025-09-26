@@ -1,6 +1,6 @@
 <?php
 
-require_once('../../MODELO/TP4/Auto.php');
+include realpath('../../MODELO/TP4/Auto.php');
 require_once 'C_Persona.php';
 
 Class C_Auto {

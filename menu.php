@@ -72,6 +72,19 @@
             <a href="VISTA/TP3/EJ3/inicio.php" class="list-group-item list-group-item-action d-flex align-items-center">
                 <i class="bi bi-file-earmark-text me-2"></i> EJ3
             </a>
+            
+            <!-- TP4 -->
+            <div class="fw-bold px-2 pt-3">Trabajo Práctico 3</div>
+            <a href="VISTA/TP3/EJ1/index.php" class="list-group-item list-group-item-action d-flex align-items-center">
+                <i class="bi bi-file-earmark-text me-2"></i> EJ1
+            </a>
+            <a href="VISTA/TP3/EJ2/index.php" class="list-group-item list-group-item-action d-flex align-items-center">
+                <i class="bi bi-file-earmark-text me-2"></i> EJ2
+            </a>
+            <a href="VISTA/TP3/EJ3/inicio.php" class="list-group-item list-group-item-action d-flex align-items-center">
+                <i class="bi bi-file-earmark-text me-2"></i> EJ3
+            </a>
+
         </div>
     </div>
     <?php

@@ -1,4 +1,4 @@
-<script src="JS/validacion.js"></script>
+<script src="../JS/validacion.js"></script>
 <?php
 
 require_once('Estructura/Utilidades/links.php');

@@ -14,7 +14,6 @@
     $dirDestino = "../../../MODELO/TP3/EJ1";
     $tam_max = 2 * 1024 * 1024;
 
-
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($_FILES['miArchivo']['error'] <= 0 ) {

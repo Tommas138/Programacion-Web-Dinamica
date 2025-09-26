@@ -1,9 +1,9 @@
 <?php
 
 require_once('../buscarAuto.php');
-require_once('../Estructura/Utilidades/links.php');
-require_once('../../CONTROL/TP4/C_Auto.php');
-require_once('../Estructura/Utilidades/funciones.php');
+require_once('../../Estructura/Utilidades/links.php');
+require_once('../../../../MODELO/TP4/Auto.php');
+require_once('../../Estructura/Utilidades/funciones.php');
 
 $data = data_submitted();
 $objAuto = new C_Auto();

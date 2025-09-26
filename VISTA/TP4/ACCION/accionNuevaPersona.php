@@ -1,9 +1,9 @@
 <?php
 
-require_once '../../CONTROL/TP4/C_Auto.php';
-require_once '../../CONTROL/TP4/C_Persona.php';
-require_once '../../MODELO/TP4/Persona.php';
-require_once '../../MODELO/TP4/Auto.php';
+require_once '../../../CONTROL/TP4/C_Auto.php';
+require_once '../../../CONTROL/TP4/C_Persona.php';
+require_once '../../../MODELO/TP4/Persona.php';
+require_once '../../../MODELO/TP4/Auto.php';
 
 $datos = [];
 $datos['nroDni'] = isset($_POST['nroDni']) ? trim($_POST['nroDni']) : '';

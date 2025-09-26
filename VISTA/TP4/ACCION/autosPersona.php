@@ -1,8 +1,8 @@
 <?php
 require_once('../Estructura/Utilidades/links.php');
 require_once('../Estructura/Utilidades/funciones.php');
-require_once('../../TP4/CONTROL/C_Persona.php');
-require_once('../../TP4/CONTROL/C_Auto.php');
+require_once('../../../CONTROL/TP4/C_Persona.php');
+require_once('../../../CONTROL/TP4/C_Auto.php');
 
 $datos = data_submitted();
 $dniPersona = $datos["dni"][0];

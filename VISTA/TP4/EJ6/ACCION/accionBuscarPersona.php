@@ -5,8 +5,6 @@ require_once(__DIR__ . '/../../CONTROL/TP4/C_Persona.php');
 require_once(__DIR__ . '/../Estructura/Utilidades/funciones.php');
 require_once(__DIR__ . '/../Estructura/Utilidades/links.php');
 
-
-
 $objControladorPersona=new C_Persona();
 $datos = data_submitted();
 $dniPersona=$datos["dni"][0];

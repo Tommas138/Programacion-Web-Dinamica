@@ -1,7 +1,7 @@
 <?php
 require_once ('../../../CONTROL/TP4/C_Persona.php');
-require_once ('Estructura/Utilidades/funciones.php');
-require_once ('Estructura/Utilidades/links.php');
+require_once ('../Estructura/Utilidades/funciones.php');
+require_once ('../Estructura/Utilidades/links.php');
 
 $objControladorPersona=new C_Persona();
 $datos = data_submitted();
