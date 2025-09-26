@@ -83,4 +83,36 @@
             height: 760px;
         }
 
+
+        .carousel-item {
+            min-height: 400px;
+        }
         
+        .carousel-control-prev,
+        .carousel-control-next {   
+            width: -10%;
+        }
+        
+        .carousel-indicators {
+            margin-bottom: -10px;
+        }
+        
+        .carousel-indicators button {
+            width: 120px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .list-group-item:hover {
+            transform: translateX(5px);
+            transition: transform 0.2s;
+        }
+        
+        .card-header h4 {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1);
+        }

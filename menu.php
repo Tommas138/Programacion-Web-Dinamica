@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" href="./VISTA/CSS/styles.css">
+<head>
+    <link rel="stylesheet" href="VISTA/CSS/styles.css">
+</head>    
+
 <?php
     require_once 'VISTA/estructura/head.php';
 ?>
@@ -42,13 +45,13 @@
                 </button>    
                 <!-- TP1 -->
                 <div class="carousel-custom carousel-item active">
-                    <div class="card">
-                        <div class="card-header bg-primary text-white text-center">
+                    <div class="d-flex gap-3 flex-column align-items-center">
+                        <div class="card-header text-black text-center w-100">
                             <h4 class="mb-0">
                                 <i class="bi bi-1-square me-2"></i>Trabajo Práctico 1
                             </h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body w-100 d-flex justify-content-center align-items-center p-5">
                             <div class="list-group list-group-flush">
                                 <a href="VISTA/TP1/EJ1/index.php" class="list-group-item list-group-item-action d-flex align-items-center">
                                     <i class="bi bi-file-earmark-text me-2 text-primary"></i> Ejercicio 1
@@ -72,13 +75,13 @@
 
                 <!-- TP2 -->
                 <div class="carousel-item">
-                    <div class="card border-success">
-                        <div class="card-header bg-success text-white text-center">
+                    <div class="d-flex gap-3 flex-column align-items-center">
+                        <div class="card-header text-black text-center w-100">
                             <h4 class="mb-0">
                                 <i class="bi bi-2-square me-2"></i>Trabajo Práctico 2
                             </h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body w-100 d-flex justify-content-center align-items-center p-5">
                             <div class="list-group list-group-flush">
                                 <a href="VISTA/TP2/EJ2/EJ2/ej2.php" class="list-group-item list-group-item-action d-flex align-items-center">
                                     <i class="bi bi-file-earmark-text me-2 text-success"></i> Ejercicio 2
@@ -114,13 +117,13 @@
 
                 <!-- TP3 -->
                 <div class="carousel-item">
-                    <div class="card border-warning">
-                        <div class="card-header bg-warning text-dark text-center">
+                    <div class="d-flex gap-3 flex-column align-items-center">
+                        <div class="card-header text-black text-center w-100">
                             <h4 class="mb-0">
                                 <i class="bi bi-3-square me-2"></i>Trabajo Práctico 3
                             </h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body w-100 d-flex justify-content-center align-items-center p-5">
                             <div class="list-group list-group-flush">
                                 <a href="VISTA/TP3/EJ1/index.php" class="list-group-item list-group-item-action d-flex align-items-center">
                                     <i class="bi bi-file-earmark-text me-2 text-warning"></i> Ejercicio 1
@@ -131,10 +134,9 @@
                                 <a href="VISTA/TP3/EJ3/inicio.php" class="list-group-item list-group-item-action d-flex align-items-center">
                                     <i class="bi bi-file-earmark-text me-2 text-warning"></i> Ejercicio 3
                                 </a>
-                            </div>
-                            <div class="text-center mt-4 text-muted">
+                                <div class="text-center mt-4 text-muted">
                                 <i class="bi bi-info-circle me-2"></i>
-                                <small>Ejercicios de archivos y validaciones</small>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -142,13 +144,13 @@
 
                 <!-- TP4 -->
                 <div class="carousel-item">
-                    <div class="card border-danger">
-                        <div class="card-header bg-danger text-white text-center">
+                    <div class="d-flex gap-3 flex-column align-items-center">
+                        <div class="card-header text-black text-center w-100">
                             <h4 class="mb-0">
                                 <i class="bi bi-4-square me-2"></i>Trabajo Práctico 4
                             </h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body w-100 d-flex justify-content-center align-items-center p-5">
                             <div class="list-group list-group-flush">
                                 <a href="VISTA/TP4/EJ3/verAutos.php" class="list-group-item list-group-item-action d-flex align-items-center">
                                     <i class="bi bi-car-front me-2 text-danger"></i> EJ3 - Ver Autos
@@ -178,45 +180,10 @@
 
             </div>
         </div>
+    </div>
     <?php
         require_once 'VISTA/estructura/footer.php';
     ?>
-    </div>
-
-    <style>
-        .carousel-item {
-            min-height: 400px;
-        }
-        
-        .carousel-control-prev,
-        .carousel-control-next {   
-            width: -10%;
-        }
-        
-        .carousel-indicators {
-            margin-bottom: -10px;
-        }
-        
-        .carousel-indicators button {
-            width: 120px;
-            height: 12px;
-            border-radius: 50%;
-        }
-        
-        .list-group-item:hover {
-            transform: translateX(5px);
-            transition: transform 0.2s;
-        }
-        
-        .card-header h4 {
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-        }
-        
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            filter: invert(1);
-        }
-    </style>
 
 </body>
 </html>
