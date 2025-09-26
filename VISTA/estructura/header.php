@@ -1,4 +1,4 @@
-<header class="w-100"> 
+<header class="w-100" > 
     <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
         <div class="container">
             <p class="text-black navbar-brand fw-bold fs-3" href="../../../index.php">
@@ -10,7 +10,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <p class="text-black fw-semibold px-3 py-2 rounded-pill mx-1" aria-current="page" href="#">
+                        <p class="text-black fw-semibold px-3 py-2 rounded-pill mx-1 hover-effect" aria-current="page" href="#">
                             Lian Ivan Sinchez
                         </p>
                     </li>

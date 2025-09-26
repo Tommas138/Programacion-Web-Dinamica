@@ -1,8 +1,10 @@
 <?php
 
-require_once('../../../MODELO/TP4/Persona.php');
-require_once('../Estructura/Utilidades/funciones.php');
-require_once('../Estructura/Utilidades/links.php');
+require_once('../../../CONTROL/TP4/C_Persona.php');
+require_once('../../estructura/Utilidades/funciones.php');
+require_once('../../estructura/Utilidades/links.php');
+require_once('../../estructura/header.php');
+
 
 $arrPersonas = (new C_Persona())->buscar(NULL);
 $cantPersonas = count($arrPersonas);
@@ -60,12 +62,15 @@ $cantPersonas = count($arrPersonas);
             </select>
             <div class="text-center">
                 <button type="submit" class="btn btn-primary my-3">VER AUTOS</button>
+                <a class="btn btn-primary my-3" style="background-color: #006efdff; border-color: #006efdff;" href="../../../menu.php">Volver al menú</a>
         </div>
         </form>
         </div>
         </div>
 
-        
+<?php
+require_once('../../estructura/footer.php');
+?>
 
                 
 

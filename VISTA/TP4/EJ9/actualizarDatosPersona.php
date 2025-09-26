@@ -1,7 +1,7 @@
 <?php
 require_once ('../../../CONTROL/TP4/C_Persona.php');
-require_once ('../Estructura/Utilidades/funciones.php');
-require_once ('../Estructura/Utilidades/links.php');
+require_once ('../../estructura/Utilidades/funciones.php');
+require_once ('../../estructura/Utilidades/links.php');
 
 $objControladorPersona=new C_Persona();
 $datos = data_submitted();
@@ -22,6 +22,7 @@ if($modifico){
                 <h6>Domicilio: <?php echo $datos['domicilio']?></h6>
             </div>
         </div>
+        <a class="btn btn-success p-2" style="background-color: #006efdff; border-color: #006efdff;" href="../../../menu.php">Volver al menú</a>
     </div>
 <?php
 }else{
@@ -30,7 +31,9 @@ if($modifico){
     <div class="alert alert-danger text-center" role="alert">
         Error al modificar persona
     </div>
+    <a class="btn btn-success p-2" style="background-color: #006efdff; border-color: #006efdff;" href="../../../menu.php">Volver al menú</a>
     </div>
     <?php
 }
+
 ?>

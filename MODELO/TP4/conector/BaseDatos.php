@@ -213,7 +213,7 @@ class BaseDatos extends PDO {
        $this->setError($e);
        if($this->getDebug()){
            echo "<pre>";
-           print_r($e);
+          // print_r($e);
            echo "</pre>";
        }
        

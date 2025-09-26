@@ -1,7 +1,7 @@
 <?php
 
-include realpath('../../MODELO/TP4/Auto.php');
-require_once 'C_Persona.php';
+include_once(__DIR__ . '/../../MODELO/TP4/Auto.php');
+require_once ('C_Persona.php');
 
 Class C_Auto {
 

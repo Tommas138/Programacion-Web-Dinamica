@@ -1,9 +1,8 @@
 <?php
 
-require_once('../buscarAuto.php');
-require_once('../../Estructura/Utilidades/links.php');
-require_once('../../../../MODELO/TP4/Auto.php');
-require_once('../../Estructura/Utilidades/funciones.php');
+require_once('../../../estructura/Utilidades/links.php');
+require_once('../../../../CONTROL/TP4/C_Auto.php');
+require_once('../../../estructura/Utilidades/funciones.php');
 
 $data = data_submitted();
 $objAuto = new C_Auto();
@@ -26,4 +25,5 @@ $buscar = $objAuto->buscar($data);
 
     <div class="mb-3">
         <a href="../buscarAuto.php" class="btn btn-primary">Volver</a>
+        <a class="btn btn-primary my-3" style="background-color: #006efdff; border-color: #006efdff;" href="../../../../menu.php">Volver al menú</a>
     </div>

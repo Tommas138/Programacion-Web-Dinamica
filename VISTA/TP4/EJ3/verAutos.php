@@ -1,59 +1,73 @@
-<?php
 
-require_once('../../../CONTROL/TP4/C_Auto.php');
-require_once('../Estructura/Utilidades/links.php');
-
-
-$objControlAuto = new C_Auto();
-$arrAutos = $objControlAuto->buscar(NULL);
-$i = 0;
-
-if ($arrAutos != null) {
-    $cantAutos = count($arrAutos);
-} else {
-    $cantAutos = -1;
-}
-?>
-
-<div class="container-md my-4 mt-5">
-
-
-<?php 
-if ($cantAutos != -1 ) {
-    ?>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">Patente</th>
-            <th scope="col">Marca</th>
-            <th scope="col">Modelo</th>
-            <th scope="col">Duenio</th>
-        </tr>
-    </thead>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../CSS/styles.css">
+    </head>
     <?php
-    while ($i < $cantAutos) {
-        ?>
-        <tbody>
-            <tr>
-                <th><?php echo $arrAutos[$i]->getPatente()?></th>
-                <td><?php echo $arrAutos[$i]->getMarca()?></th>
-                <td><?php echo $arrAutos[$i]->getModelo()?></ht>
-                <td><?php echo $arrAutos[$i]->getObjDuenio()->getNombre() . " " . $arrAutos[$i]->getObjDuenio()->getApellido() ?></td>
-            </tr>
-        </tbody>
+
+    require_once('../../../CONTROL/TP4/C_Auto.php');
+    require_once('../../estructura/Utilidades/links.php');
+    
+    ?>
+    <body>
         <?php
-        $i++;
-    }
-    } else {
+        require_once('../../estructura/header.php');
+
+
+        $objControlAuto = new C_Auto();
+        $arrAutos = $objControlAuto->buscar(NULL);
+        $i = 0;
+
+        if ($arrAutos != null) {
+            $cantAutos = count($arrAutos);
+        } else {
+            $cantAutos = -1;
+        }
         ?>
-        <div class="alert alert-warning" role="alert">
-            No existen autos cargados
+
+        <div class="container-md my-4 mt-5" id="pp">
+            <?php 
+                if ($cantAutos != -1 ) {
+            ?>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Patente</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Duenio</th>
+                    </tr>
+                </thead>
+                <?php
+                    while ($i < $cantAutos) {
+                ?>
+                    <tbody>
+                        <tr>
+                            <th><?php echo $arrAutos[$i]->getPatente()?></th>
+                            <td><?php echo $arrAutos[$i]->getMarca()?></th>
+                            <td><?php echo $arrAutos[$i]->getModelo()?></ht>
+                            <td><?php echo $arrAutos[$i]->getObjDuenio()->getNombre() . " " . $arrAutos[$i]->getObjDuenio()->getApellido() ?></td>
+                        </tr>
+                    </tbody>
+                    <?php
+                    $i++;
+                }
+                } else {
+                    ?>
+                    <div class="alert alert-warning" role="alert">
+                        No existen autos cargados
+                    </div>
+                <?php
+                }
+                ?>
+            </table>
+            <a class="btn btn-success p-2" style="background-color: #006efdff; border-color: #006efdff;" href="../../../menu.php">Volver al menú</a>
         </div>
-    <?php
-    }
-    ?>
 
-</div>
-</div>
-
+        <?php
+        require_once('../../estructura/footer.php');
+        ?>
+        
+    </body>
+</html>

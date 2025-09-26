@@ -1,71 +1,3 @@
-/**const form = document.getElementById("formPersona");
-form.addEventListener("submit", function(event) {
-    if (!validar()) {
-        event.preventDefault(); 
-        event.stopPropagation();
-        alert("Por favor, corrige los errores en el formulario.");
-        form.classList.add('was-validated'); 
-    }
-});
-
-function validar() {
-    let esValido = true;
-
-    const dni = document.getElementById("nroDni");
-    const apellido = document.getElementById("apellido");
-    const nombre = document.getElementById("nombre");
-    const fechaNac = document.getElementById("fechaNac");
-    const telefono = document.getElementById("telefono"); 
-    
-    const fechaReal = new Date(fechaNac)
-
-    
-
-
-    const dniRegex = /^\d{7,8}$/;
-    if (!dniRegex.test(dni.value)) {
-        dni.classList.add("highlight");
-        esValido = false;
-    } else {
-        dni.classList.remove("highlight");
-    }
-
-    const nombreApellidoRegex = /^[a-zA-Z\s]+$/;
-
-    if (!nombreApellidoRegex.test(apellido.value)) {
-        apellido.classList.add("highlight");
-        esValido = false;
-    } else {
-        apellido.classList.remove("highlight");
-    }
-
-    if (!nombreApellidoRegex.test(nombre.value)) {
-        nombre.classList.add("highlight");
-        esValido = false;
-    } else {
-        nombre.classList.remove("highlight");
-    }
-    
-    if (!fechaNac.value) {
-        fechaNac.classList.add("highlight");
-        esValido = false;
-    } else {
-        fechaNac.classList.remove("highlight");
-    }
-
-    const telefonoRegex = /^[\d\s-]+$/;
-    if (telefono.value && !telefonoRegex.test(telefono.value)) {
-        telefono.classList.add("highlight");
-        esValido = false;
-    } else {
-        telefono.classList.remove("highlight");
-    }
-
-
-    return esValido;
-}
-    */
-
 const form = document.getElementById("formPersona");
 
 function validar() {
@@ -116,6 +48,9 @@ function aplicarMensaje(elemento, condicion) {
                 case "nombreInput":
                     texto.textContent = "Nombre inválido";
                     break;
+                case "dniInput":
+                    texto.textContent = "DNI inválido";
+                break;
                 default:
                     break;
             }
@@ -132,6 +67,7 @@ function aplicarMensaje(elemento, condicion) {
 
     const dniRegex = /^\d{7,8}$/;
     aplicarEstilo(dni, !dni.value || !dniRegex.test(dni.value));
+    aplicarMensaje(dniInput, !dniRegext.test(dni.value))
 
     const nombreApellidoRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
     const regexApellidoTest =  !nombreApellidoRegex.test(apellido.value)

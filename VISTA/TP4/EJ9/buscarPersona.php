@@ -1,8 +1,9 @@
 <?php
 require_once('../../../CONTROL/TP4/C_Persona.php');
 require_once('../../../CONTROL/TP4/C_Auto.php');
-require_once(__DIR__ . '/Estructura/Utilidades/funciones.php');
-require_once(__DIR__. '/Estructura/Utilidades/links.php');
+require_once('../../estructura/Utilidades/funciones.php');
+require_once('../../estructura/Utilidades/links.php');
+require_once('../../estructura/header.php');
 $objControlPersona = new C_Persona();
 $objPersonas = $objControlPersona->buscar(NULL);
 $cantPersonas = count($objPersonas);
@@ -26,7 +27,12 @@ $cantPersonas = count($objPersonas);
         </select>
         <div class="text-center">
             <button type="submit" class="btn btn-primary my-3">BUSCAR PERSONA</button>
+            <a class="btn btn-primary my-3" style="background-color: #006efdff; border-color: #006efdff;" href="../../../menu.php">Volver al menú</a>
     </div>
     </form>
     </div>
 </div>
+
+<?php
+require_once('../../estructura/footer.php');
+?>

@@ -1,8 +1,8 @@
 <?php
-require_once('../Estructura/Utilidades/links.php');
-require_once('../Estructura/Utilidades/funciones.php');
-require_once('../../../CONTROL/TP4/C_Persona.php');
-require_once('../../../CONTROL/TP4/C_Auto.php');
+require_once('../../../estructura/Utilidades/links.php');
+require_once('../../../estructura/Utilidades/funciones.php');
+require_once('../../../../CONTROL/TP4/C_Persona.php');
+require_once('../../../../CONTROL/TP4/C_Auto.php');
 
 $datos = data_submitted();
 $dniPersona = $datos["dni"][0];
@@ -24,6 +24,7 @@ if ($autosPersona != null) {
 <div class="container-md my-5">
   <div class="text-center">
     <a href="../listaPersonas.php" class="btn btn-primary mb-3">VOLVER A PERSONAS</a>
+    <a class="btn btn-primary mb-3" style="background-color: #006efdff; border-color: #006efdff;" href="../../../../menu.php">Volver al menú</a>
   </div>
 
   <div class="row align-items-center justify-content-center">

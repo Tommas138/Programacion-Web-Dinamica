@@ -1,9 +1,10 @@
 <script src="../JS/validacion.js"></script>
 <?php
 
-require_once(__DIR__ . '/../../CONTROL/TP4/C_Persona.php');
-require_once(__DIR__ . '/../Estructura/Utilidades/funciones.php');
-require_once(__DIR__ . '/../Estructura/Utilidades/links.php');
+require_once(__DIR__ . '/../../../../CONTROL/TP4/C_Persona.php');
+require_once('../../../estructura/Utilidades/funciones.php');
+require_once('../../../estructura/Utilidades/links.php');
+require_once('../../../estructura/header.php');
 
 $objControladorPersona=new C_Persona();
 $datos = data_submitted();
@@ -13,6 +14,12 @@ $param['nroDni']=$dniPersona;
 $personaDatos=$objControladorPersona->buscar($param);
 
 ?>
+
+
+
+<head>
+    <link rel="stylesheet" href="../../../CSS/styles.css">
+</head>
 <div class="container-md m-5 mx-auto">
             <form method="post" action="../actualizarDatosPersona.php" class="needs-validation" novalidate>
             <div class="row justify-content-center g-3 px-5">
@@ -82,9 +89,14 @@ $personaDatos=$objControladorPersona->buscar($param);
                 </div>
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary my-3">MODIFICAR</button>
+                    <a class="btn btn-primary my-3" style="background-color: #006efdff; border-color: #006efdff;" href="../../../../menu.php">Volver al menú</a>
                 </div>
             </div>
             
             </form>
 </div>
 <script src="../Estructura/Utilidades/validacion.js"></script>
+
+<?php
+require_once('../../../estructura/footer.php');
+?>
